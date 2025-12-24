@@ -19,24 +19,27 @@ A simple Crystal library to colorize and style terminal text.
 ```crystal
 require "salis"
 
-# Simple colors
-puts Salis.red("Red text")
-puts Salis.green("Green text")
-puts Salis.blue("Blue text")
+# Chain styles on strings
+puts "Hello".red.bold
+puts "World".green.underline
 
-# Styles
-puts Salis.bold("Bold text")
-puts Salis.italic("Italic text")
-puts Salis.underline("Underlined text")
+# Or use module methods (accepts any type)
+puts Salis.red(123)
+puts Salis.colorize("Multi", :bold, :red, :bg_white)
+```
 
-# Bright colors
-puts Salis.bright_cyan("Bright cyan")
+### Terminal Detection
 
-# Background
-puts Salis.bg_yellow("Yellow background")
+```crystal
+Salis.supports_color?  # Check support
+Salis.enabled = false  # Disable colors
+Salis.auto_detect!     # Auto-detect
+```
 
-# Combine multiple styles
-puts Salis.colorize("Multi-style", :bold, :red, :bg_white)
+### Strip ANSI
+
+```crystal
+"colored".red.strip_ansi  # => "colored"
 ```
 
 ## Available styles
