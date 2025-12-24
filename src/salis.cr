@@ -65,7 +65,7 @@ module Salis
   {% end %}
 
   @[AlwaysInline]
-  def self.colorize(text : String, *styles : Symbol) : String
+  def self.colorize(text, *styles : Symbol) : String
     codes = styles.map { |s| CODES[s] }.join
     "#{codes}#{text}#{CODES[:reset]}"
   end
