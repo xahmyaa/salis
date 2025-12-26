@@ -36,12 +36,6 @@ Salis.enabled = false  # Disable colors
 Salis.auto_detect!     # Auto-detect
 ```
 
-### Strip ANSI
-
-```crystal
-"colored".red.strip_ansi  # => "colored"
-```
-
 ## Available styles
 
 | Category | Options |
