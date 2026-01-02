@@ -46,14 +46,6 @@ Salis.auto_detect!     # Auto-detect
 | Background | `bg_black`, `bg_red`, `bg_green`, `bg_yellow`, `bg_blue`, `bg_magenta`, `bg_cyan`, `bg_white` |
 | Bg Bright | `bg_bright_black`, `bg_bright_red`, `bg_bright_green`, `bg_bright_yellow`, `bg_bright_blue`, `bg_bright_magenta`, `bg_bright_cyan`, `bg_bright_white` |
 
-## Contributing
-
-1. Fork it (<https://github.com/xahmyaa/salis/fork>)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
-
 ## Contributors
 
 - [xahmyaa](https://github.com/xahmyaa) - creator and maintainer
